@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Creacion del footer*/
+.Pie_Pagina {
+    width: 100%;
+    background-color: rgb(189, 131, 43);
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+/*Estilos de las 3 columnas*/
+.Pie_Pagina .Grupo_1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Creacion de las 3 columnas*/
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+/*Estilos para colocar el logo del footer*/
+.Pie_Pagina .Grupo_1 .Box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilos para el logo del footer*/
+.Pie_Pagina .Grupo_1 .Box figure img {
+    width: 250px;
+    border-radius: 100px;
+}
+
+/*Estilos para los titulos del footer*/
+.Pie_Pagina .Grupo_1 .Box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+/*Estilos para el texto del footer*/
+.Pie_Pagina .Grupo_1 .Box p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/*Estilos para los iconos de las redes sociales*/
+.Pie_Pagina .Grupo_1 .Red_Social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease; /*Transision para cambiar los estilos al pasar el mouse*/
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+/*Estilos al pasar el mouse por los iconos */
+.Pie_Pagina .Grupo_1 .Red_Social a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*Estilos para los derechos de autor*/
+.Pie_Pagina .Grupo_2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+}
+/*Cierre del footer*/

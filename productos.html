@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_BarraNav.css">
+    <link rel="stylesheet" href="css/style_footer.css">
+    <!-- Llamda para los diseños del footer y la barra de navegacion-->
+    <link rel="stylesheet" href="css/style_productos.css">
+    <!--Llamada para los estilos de la pagina productos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--LLamada para los iconos-->
+    <title>D´petico</title>
+</head>
+<body>
+
+    <!--Creacion de la barra de navegacion-->
+    <nav class="Barra_Navegacion"> <!--Creacion de la clase Menu-->
+      <ul><!--Se crea una lista-->
+          <li class="Logo"><img src="imagenes/Logo_Beta.jpeg" alt="Logo"></li>
+          <!-- Se anexa un logo al menu-->
+          <!--Se agregan los hipervinculos -->
+          <li><a href="index.html"> Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <!--Cierre de lista-->
+    </nav>
+  <!--Cierre de la barra de navegacion-->
+
+    <section class="menu">
+        <h1 class="Titulo_Productos">Deliciosos productos a su alcance</h1>
+        <ul>
+          <li>
+            <span>Arepa sencilla</span> <!-- span es como un marcador invisible que usas para separar una parte del texto y después cambiarle el color, tamaño o estilo sin afectar todo lo demás.-->
+            <span class="etiqueta-nuevo">Nuevo</span>
+            <span class="precio">$2000</span>
+          </li>
+          <li>
+            <span>Paquete de arepas con queso x 5</span>
+            <span class="precio">$10.000</span>
+          </li>
+          <li>
+            <span>Arepa de yuca x 5</span>
+            <span class="precio">$13.000</span>
+          </li>
+          <li>
+            <span>Empanada de carne o pollo</span>
+            <span class="precio">$3.500</span>
+          </li>
+        </ul>
+      </section>
+
+    <!--Creacion footer-->
+  <footer class="Pie_Pagina">
+    <!-- se crea el div Grupo_1 que contiene los demas divs para aplicar estilos-->
+    <div class="Grupo_1">
+        <!--Se crea el div para el logo-->
+        <div class="Box">
+            <figure>
+                <!--Se inserta una  imagen-->
+                <img src="imagenes/Logo_Beta.jpeg" alt="Logo">
+            </figure>
+        </div>
+
+        <!--Se crea el div para agregar un titulo e informacion-->
+        <div class="Box">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <!--Se agrega un div para insertar las redes sociales con sus iconos-->
+        <div class="Box">
+            <h2>Siguenos</h2>
+            <div class="Red_Social">
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+            </div>
+        </div>
+    <!--Cierre del div(Grupo_1)--> 
+    </div>
+
+    <!--Se crea el div Grupo_2 para los derechos reservados-->
+    <div class="Grupo_2">
+        <small>&copy; 2025 <b>Proyecto Artemis</b> - Todos Los Derechos Reservados</small>
+    </div>
+  </footer>
+</body>
+</html>

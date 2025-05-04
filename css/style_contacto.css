@@ -1,0 +1,105 @@
+/*Estilos para el contenedor principal de todo el formulario*/
+.Forma_Container{
+    width: 100%; /*Ocupa el 100% del ancho disponible*/
+    max-width: 1100px; /*No supere los 1100px para que este centrado*/
+    margin: auto; /*centra el contenedor*/
+    display: grid;/*para dividir el contenedor en dos columnas*/
+    grid-template-columns: repeat(2,1fr); /*Crea dos columnas*/
+    grid-gap: 50px; /*Espacio entre columnas*/
+    margin-top: 90px; /*Separacion superior*/
+    margin-bottom: 200px; /*Separacion inferior*/
+}
+
+/*Estilos para los titulos*/
+.Forma_Container h2{
+    margin-bottom: 15px; /*Separacion Inferior*/
+    font-size: 35px; /*Tamaño de la letra*/
+    color: rgb(189, 131, 43); 
+    font-family: monospace; /*Cambia la fuente de la letra*/
+}
+
+/*Estilos para los textos*/
+.Forma_Container iframe{
+    margin-bottom: 30px; /*Espacio inferior*/
+    width: 80%;
+    height: 80%;
+}
+
+/*Estilos para los enlaces de contacto*/
+.Forma_Container a{
+    font-size: 19px;
+    display: inline-block;
+    text-decoration: none; /*Texto sin subrayado*/
+    width: 100%; /*ocupe el ancho compleot*/
+    margin-bottom: 15px; /*Espacio superior*/
+    color: black;
+    font-weight: 700; /*Texto en negrita*/
+    font-family: monospace; /*Cambia la fuente de la letra*/
+}
+
+/*Estilos para los iconos de enlaces de contacto*/
+.Forma_Container a i{
+    color: rgb(189, 131, 43);
+    margin-right: 10px; /*Espacio a la derecha entre iconos*/
+}
+
+/*Estilos para los campos del texto y textarea*/
+.Forma_Container form .Campo, textarea{
+    width: 100%;
+    padding: 15px 10px; /*Espacio del campo*/
+    font-size: 16px;
+    border: 1px solid #9d9696;
+    margin-bottom: 20px; /*Espacio entre campos*/
+    border-radius: 3px; /*Borde del recuadro del campo*/
+    font-family: monospace;
+    background-color: #e5dfdf;
+}
+
+/*Ajustes especificos para textarea*/
+.Forma_Container form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+/*Estilos para el boton de envio*/
+.Forma_Container .Btn_Enviar{
+    padding: 15px;/*Tamño del boton*/
+    font-size: 18px;
+    border: none; /*sin borde*/
+    background: rgb(189, 131, 43);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer; /*Cursor en forma de mano*/
+    transition: all 300ms ease; /*transicion para cambiar de estilo al pasar el mouse*/
+    font-family: monospace;
+}
+
+/*Estilo del boton al pasar el mouse*/
+.Forma_Container .Btn_Enviar:hover{
+    background: black;
+    color:white;
+}
+/*Cierre de estilos del formulario*/
+
+/*Diseño Responsive*/
+@media screen and (max-width: 1000px) {
+    .Forma_Container {
+        grid-template-columns: 1fr; /* Pasa a tener una columna */
+        grid-gap: 30px; /*Espacio entre elementos*/
+        padding: 0 20px; /* Margen interno para evitar que quede pegado*/
+    }
+
+    .Forma_Container form textarea {
+        /* El textarea se ajusta al 100% */
+        max-width: 100%; 
+        min-width: 100%;
+    }
+}
+
+/*Cierre del diseño*/
+
+footer{
+    margin-bottom: 10px;
+}
